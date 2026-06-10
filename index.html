@@ -7,17 +7,13 @@
     <meta name="Abstract" content="İzmir Havalimanına çok yakın otopark,depolama hizmeti için ADAPARK otopark depolama olarak Adnan Menderes Havalimanına çok yakın araç depolama sahamız ile sizlere hizmet vermeye devam ediyoruz">
     <meta name="Copyright" content="Tüm Hakları Saklıdır © 2025 ADAPARK">
     <meta name="keywords" content="izmir otopark depolama, adapark izmir otopark depolama , izmir Havalimanına otopark,adapark izmir otopark, izmir araç depolama">
-    
-    <title>ADAPARK OTOPARK - DEPOLAMA</title>         
-    
+    <title>ADAPARK OTOPARK - DEPOLAMA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2 family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
     <style>
         :root {
             --primary-color: #ffffff;
@@ -30,19 +26,15 @@
             --body-bg: #ffffff;
             --card-bg: #ffffff;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             color: var(--text-dark);
             background-color: var(--body-bg);
             overflow-x: hidden;
         }
-
         h1, h2, h3, h4, h5, h6, .navbar-brand {
             font-family: 'Outfit', sans-serif;
         }
-
-        /* Top Bar - Light Mode */
         .top-bar {
             background-color: var(--secondary-bg);
             font-size: 0.9rem;
@@ -50,20 +42,23 @@
             border-bottom: 1px solid var(--border-color);
             color: var(--text-dark) !important;
         }
-
-        /* Navbar - Light Mode Glassmorphism */
         .navbar {
             background-color: rgba(255, 255, 255, 0.92) !important;
             backdrop-filter: blur(10px);
-            padding: 15px 0;
+            padding: 10px 0;
             transition: all 0.3s ease;
             border-bottom: 1px solid var(--border-color);
         }
+        /* Navbar Logo */
+        .navbar-logo {
+            height: 52px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
         .navbar-brand {
-            font-size: 1.6rem;
-            letter-spacing: 1px;
-            color: var(--text-dark) !important;
-            font-weight: 700;
+            padding: 0;
+            line-height: 1;
         }
         .nav-link {
             color: var(--text-muted) !important;
@@ -87,8 +82,6 @@
             background-color: var(--accent-hover);
             transform: translateY(-2px);
         }
-
-        /* --- BEYAZ MODERN HERO TASARIMI --- */
         .hero-section-modern {
             position: relative;
             min-height: 85vh;
@@ -98,7 +91,6 @@
             padding: 100px 0;
             background-color: #ffffff;
         }
-
         .hero-video-bg {
             position: absolute;
             top: 50%;
@@ -111,44 +103,36 @@
             transform: translate(-50%, -50%);
             object-fit: cover;
         }
-
-        /* Beyaz Geçişli Akıllı Maske */
         .hero-modern-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to right, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.90) 45%, rgba(255, 255, 255, 0.15) 100%);
+            background: linear-gradient(to right, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.90) 45%, rgba(255,255,255,0.15) 100%);
             z-index: 2;
         }
-
         @media (max-width: 991.98px) {
             .hero-modern-overlay {
-                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.85) 100%);
+                background: linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.85) 100%);
             }
         }
-
         .hero-content-inside {
             position: relative;
             z-index: 3;
         }
-
-        /* Açık Tema Kurumsal Rozet */
         .badge-modern-accept {
             display: inline-flex;
             align-items: center;
-            background: rgba(37, 99, 235, 0.08);
+            background: rgba(37,99,235,0.08);
             color: var(--accent-color);
-            border: 1px solid rgba(37, 99, 235, 0.2);
+            border: 1px solid rgba(37,99,235,0.2);
             padding: 8px 16px;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 0.5px;
-            text-uppercase: uppercase;
         }
-
         .pulse-dot {
             width: 8px;
             height: 8px;
@@ -156,16 +140,13 @@
             border-radius: 50%;
             margin-right: 10px;
             display: inline-block;
-            box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
             animation: pulseAnimation 2s infinite;
         }
-
         @keyframes pulseAnimation {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
-            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37,99,235,0.4); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(37,99,235,0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37,99,235,0); }
         }
-
         .hero-main-title {
             font-size: 3.5rem;
             font-weight: 800;
@@ -173,18 +154,13 @@
             letter-spacing: -1px;
             color: var(--text-dark);
         }
-
-        @media (max-width: 768px) {
-            .hero-main-title { font-size: 2.3rem; }
-        }
-
+        @media (max-width: 768px) { .hero-main-title { font-size: 2.3rem; } }
         .hero-subtitle {
             font-size: 1.15rem;
             max-width: 550px;
             line-height: 1.6;
             color: var(--text-muted);
         }
-
         .btn-modern-cta {
             background: var(--accent-color);
             color: #ffffff;
@@ -198,24 +174,16 @@
             align-items: center;
             text-decoration: none;
         }
-
         .btn-modern-cta:hover {
             background: var(--accent-hover);
             color: #ffffff;
             transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25) !important;
+            box-shadow: 0 12px 24px rgba(37,99,235,0.25) !important;
         }
-
-        .phone-block-hero a {
-            transition: color 0.2s;
-            color: var(--text-dark);
-        }
-        .phone-block-hero a:hover {
-            color: var(--accent-color) !important;
-        }
-
+        .phone-block-hero a { transition: color 0.2s; color: var(--text-dark); }
+        .phone-block-hero a:hover { color: var(--accent-color) !important; }
         .info-pill-hero {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255,255,255,0.85);
             backdrop-filter: blur(5px);
             border: 1px solid var(--border-color);
             padding: 10px 18px;
@@ -227,7 +195,6 @@
             gap: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
         }
-
         .social-hero-link {
             color: var(--text-muted);
             font-size: 1.2rem;
@@ -235,17 +202,8 @@
             transition: color 0.2s, transform 0.2s;
             display: inline-block;
         }
-
-        .social-hero-link:hover {
-            color: var(--accent-color);
-            transform: scale(1.15);
-        }
-        /* --- HERO TASARIM SONU --- */
-
-        /* Section Global */
-        .section-padding {
-            padding: 90px 0;
-        }
+        .social-hero-link:hover { color: var(--accent-color); transform: scale(1.15); }
+        .section-padding { padding: 90px 0; }
         .section-title {
             position: relative;
             margin-bottom: 50px;
@@ -263,8 +221,6 @@
             background-color: var(--accent-color);
             border-radius: 2px;
         }
-        
-        /* Açık Tema Kurumsal Bölüm Alanı */
         .bg-light-section {
             background-color: var(--secondary-bg);
             color: var(--text-dark);
@@ -272,7 +228,7 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        /* References / Logos */
+        /* ===== REFERANSLAR: Orijinal renkler, grayscale YOK ===== */
         .ref-section {
             background-color: #f8fafc;
             padding: 40px 0;
@@ -289,22 +245,20 @@
         .ref-grid img {
             max-height: 45px;
             object-fit: contain;
-            filter: grayscale(100%);
-            opacity: 0.5;
-            transition: all 0.3s ease;
+            filter: none;      /* grayscale kaldırıldı */
+            opacity: 1;        /* orijinal opaklık */
+            transition: transform 0.3s ease;
         }
         .ref-grid img:hover {
-            filter: grayscale(0%);
-            opacity: 1;
             transform: scale(1.05);
         }
+        /* ===================================================== */
 
-        /* Services Section */
         .service-icon-box {
             background: white;
             padding: 40px 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+            box-shadow: 0 10px 30px rgba(15,23,42,0.04);
             text-align: center;
             transition: all 0.3s ease;
             height: 100%;
@@ -312,37 +266,28 @@
         }
         .service-icon-box:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 20px 40px rgba(15,23,42,0.08);
             border-color: var(--accent-color);
         }
-        .service-icon-box img {
-            width: 70px;
-            height: 70px;
-            margin-bottom: 20px;
-            object-fit: contain;
-        }
-
-        /* About Section */
+        .service-icon-box img { width: 70px; height: 70px; margin-bottom: 20px; object-fit: contain; }
         .about-img-wrap {
             position: relative;
             border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+            box-shadow: 0 20px 40px rgba(15,23,42,0.08);
         }
         .about-floating-card {
             position: absolute;
             bottom: 20px;
             left: 20px;
             right: 20px;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255,255,255,0.95);
             backdrop-filter: blur(10px);
             padding: 20px;
             border-radius: 16px;
             border: 1px solid var(--border-color);
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
-
-        /* Gallery/Saha Section */
         .thumb-card {
             position: relative;
             border-radius: 16px;
@@ -350,26 +295,14 @@
             margin-bottom: 24px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.04);
         }
-        .thumb-img-wrapper {
-            height: 250px;
-            overflow: hidden;
-        }
-        .thumb-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        .thumb-card:hover .thumb-img-wrapper img {
-            transform: scale(1.1);
-        }
+        .thumb-img-wrapper { height: 250px; overflow: hidden; }
+        .thumb-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .thumb-card:hover .thumb-img-wrapper img { transform: scale(1.1); }
         .thumb-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.4) 100%);
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.4) 100%);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -378,17 +311,8 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        .thumb-card:hover .thumb-overlay {
-            opacity: 1;
-        }
-
-        /* Contact Tabs */
-        .nav-tabs-custom {
-            border-bottom: none;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 35px;
-        }
+        .thumb-card:hover .thumb-overlay { opacity: 1; }
+        .nav-tabs-custom { border-bottom: none; justify-content: center; gap: 15px; margin-bottom: 35px; }
         .nav-tabs-custom .nav-link {
             background: var(--secondary-bg) !important;
             color: var(--text-dark) !important;
@@ -410,7 +334,7 @@
             color: var(--text-dark);
         }
         .form-control:focus {
-            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
             border-color: var(--accent-color);
             background-color: #fff;
         }
@@ -424,18 +348,14 @@
             border: none;
             transition: background 0.3s;
         }
-        .btn-submit:hover {
-            background-color: var(--accent-hover);
-        }
+        .btn-submit:hover { background-color: var(--accent-hover); }
         .tab-content-wrapper {
             background: white;
             padding: 40px;
             border-radius: 24px;
             border: 1px solid var(--border-color);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.02);
+            box-shadow: 0 20px 40px rgba(15,23,42,0.02);
         }
-
-        /* Footer - Açık Kurumsal Stil */
         .site-footer {
             background-color: #f8fafc;
             color: var(--text-muted);
@@ -443,33 +363,15 @@
             font-size: 0.95rem;
             border-top: 1px solid var(--border-color);
         }
-        .site-footer h5 {
-            color: var(--text-dark);
-            margin-bottom: 25px;
-        }
-        .site-footer-links {
-            list-style: none;
-            padding: 0;
-        }
-        .site-footer-links li {
-            margin-bottom: 12px;
-        }
-        .site-footer-link {
-            color: var(--text-muted);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .site-footer-link:hover {
-            color: var(--accent-color);
-        }
-
-        /* Floating Whatsapp */
+        .site-footer h5 { color: var(--text-dark); margin-bottom: 25px; }
+        .site-footer-links { list-style: none; padding: 0; }
+        .site-footer-links li { margin-bottom: 12px; }
+        .site-footer-link { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .site-footer-link:hover { color: var(--accent-color); }
         .float-wp {
             position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
+            width: 60px; height: 60px;
+            bottom: 40px; right: 40px;
             background-color: #25d366;
             color: #FFF;
             border-radius: 50px;
@@ -483,10 +385,7 @@
             transition: all 0.3s ease;
             text-decoration: none;
         }
-        .float-wp:hover {
-            transform: scale(1.1);
-            color: #fff;
-        }
+        .float-wp:hover { transform: scale(1.1); color: #fff; }
     </style>
 </head>
 <body>
@@ -494,7 +393,7 @@
     <div class="top-bar d-none d-md-block">
         <div class="container d-flex justify-content-between align-items-center">
             <span class="d-flex align-items-center">
-                <i class="bi bi-house-door text-primary me-2"></i> 
+                <i class="bi bi-house-door text-primary me-2"></i>
                 <a href="https://adaparkizmir.com/index.php" class="text-dark text-decoration-none fw-bold">ADAPARK</a>
             </span>
             <span class="d-flex align-items-center gap-3">
@@ -506,37 +405,30 @@
 
     <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="https://adaparkizmir.com/index.php">ADAPARK</a>
-            
+            <!-- LOGO GÖRSELİ -->
+            <a class="navbar-brand" href="https://adaparkizmir.com/index.php">
+                <img src="adapark-logo.png" alt="ADAPARK" class="navbar-logo">
+            </a>
+
             <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
                 <a href="https://adaparkizmir.com/index.php#section_6" class="btn btn-nav-cta btn-sm text-white">İLETİŞİM</a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://adaparkizmir.com/index.php#section_1">Ana Sayfa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://adaparkizmir.com/index.php#section_0">Hakkımızda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://adaparkizmir.com/index.php#section_2">Otoparklar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://adaparkizmir.com/price.php">Fiyatlar</a>
-                    </li>                    
-                    <li class="nav-item">                        
-                        <a class="nav-link me-lg-4" href="https://adaparkizmir.com/index.php#section_5">İletişim</a>                        
-                    </li>                      
+                    <li class="nav-item"><a class="nav-link active" href="https://adaparkizmir.com/index.php#section_1">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://adaparkizmir.com/index.php#section_0">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://adaparkizmir.com/index.php#section_2">Otoparklar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://adaparkizmir.com/price.php">Fiyatlar</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-4" href="https://adaparkizmir.com/index.php#section_5">İletişim</a></li>
                     <li class="nav-item d-none d-lg-block">
                         <a href="https://adaparkizmir.com/index.php#section_6" class="btn btn-nav-cta text-white">İLETİŞİM</a>
                     </li>
-                </ul>              
+                </ul>
             </div>
         </div>
     </nav>
@@ -548,52 +440,40 @@
                 Tarayıcınız video etiketini desteklemiyor.
             </video>
             <div class="hero-modern-overlay"></div>
-
             <div class="container hero-content-inside">
                 <div class="row">
                     <div class="col-lg-7 col-xl-6 text-start">
-                        
                         <div class="badge-modern-accept mb-4">
                             <span class="pulse-dot"></span>
                             Rezervasyonsuz Müşteri Kabul
                         </div>
-
-                        <h1 class="hero-main-title mb-3">
-                            Adapark'a <br class="d-none d-md-block">Hoş Geldiniz
-                        </h1>
-                        
-                        <p class="hero-subtitle lead mb-5">
-                            Seyahate çıkarken arabanız bizde kalsın, gözünüz arkada kalmasın!
-                        </p>
-
+                        <h1 class="hero-main-title mb-3">Adapark'a <br class="d-none d-md-block">Hoş Geldiniz</h1>
+                        <p class="hero-subtitle lead mb-5">Seyahate çıkarken arabanız bizde kalsın, gözünüz arkada kalmasın!</p>
                         <div class="d-flex flex-wrap align-items-center gap-4 mb-5">
                             <a class="btn btn-modern-cta shadow-lg text-white" href="tel:+905469685222">
                                 <i class="bi bi-telephone-fill me-2"></i>Hemen Ara
                             </a>
                             <div class="phone-block-hero">
-                                <span class="text-muted d-block small text-uppercase tracking-wider">7/24 İletişim Hattı</span>
+                                <span class="text-muted d-block small text-uppercase">7/24 İletişim Hattı</span>
                                 <a href="tel:+905469685222" class="fw-bold fs-4 text-decoration-none">0546 968 52 22</a>
                             </div>
                         </div>
-
                         <div class="d-flex flex-wrap gap-3 mb-4">
                             <div class="info-pill-hero">
                                 <i class="bi bi-clock-history text-primary"></i>
-                                <span>7 / 24 Açık & Güvenlikli</span>
+                                <span>7 / 24 Açık &amp; Güvenlikli</span>
                             </div>
                             <div class="info-pill-hero">
                                 <i class="bi bi-geo-alt-fill text-danger"></i>
                                 <span>Ata Cd. No:8, Görece Menderes/İzmir</span>
                             </div>
                         </div>
-
                         <div class="social-hero-wrap pt-4 border-top border-secondary border-opacity-25">
-                            <span class="text-muted me-3 small text-uppercase tracking-wider">Hızlı Bağlantılar:</span>
-                            <a href="https://www.instagram.com/  /" target="_blank" class="social-hero-link"><i class="bi bi-instagram"></i></a>
+                            <span class="text-muted me-3 small text-uppercase">Hızlı Bağlantılar:</span>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-hero-link"><i class="bi bi-instagram"></i></a>
                             <a href="https://api.whatsapp.com/send?phone=+905469685222&text=Merhaba, Bilgi almak istiyorum." target="_blank" class="social-hero-link"><i class="bi bi-whatsapp"></i></a>
-                            <a href="https://www.google.com.tr/maps/place/Adapark+Otopark+ve+Ara%C3%A7+Depolama/@38.293275,27.135222,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbe1738eefff23:0x1f26eb8492587dd8!8m2!3d38.293275!4d27.135222!16s%2Fg%2F11n60g7x_g?hl=tr&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="social-hero-link"><i class="bi bi-map-fill"></i></a>
+                            <a href="https://www.google.com.tr/maps/place/Adapark+Otopark+ve+Ara%C3%A7+Depolama/@38.293275,27.135222,17z" target="_blank" class="social-hero-link"><i class="bi bi-map-fill"></i></a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -601,7 +481,7 @@
 
         <section class="ref-section">
             <div class="container text-center">
-                <h5 class="text-muted text-uppercase tracking-wider mb-4">Referanslarımız</h5>
+                <h5 class="text-muted text-uppercase mb-4">Referanslarımız</h5>
                 <div class="ref-grid">
                     <img src="https://adaparkizmir.com/images/garenta.png" alt="Garenta">
                     <img src="https://adaparkizmir.com/images/zeplin.png" alt="Zeplin">
@@ -653,14 +533,12 @@
                             Araç depolama alanımız 7/24 güvenlik kameraları ve güvenlik personellerimiz ile korunmaktadır.<br>
                             Firmanız veya şahsınızın araç depolama hizmetleri kapsamında sevk edeceği araçların; teslim alınması, güvenlikli ve tam sigortalı sahamızda depolanması ihtiyaçlarınızı karşılayarak çözüm ortağınız olabiliriz.
                         </p>
-                        
                         <div class="mt-4">
                             <h5 class="text-primary fw-bold mb-3">Uzun süreli depolamalara özel sunduğumuz hizmetler:</h5>
                             <ul class="text-muted list-unstyled ps-2">
                                 <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Araçlarınızın teslim edilmeden önce iç dış yıkaması tarafımızca gerçekleştirilmektedir.</li>
                             </ul>
                         </div>
-
                         <div class="mt-4">
                             <h5 class="text-primary fw-bold mb-3">Lojistik destek özelinde sunduğumuz hizmetler:</h5>
                             <ul class="text-muted list-unstyled ps-2">
@@ -669,7 +547,6 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="col-lg-5">
                         <div class="about-img-wrap">
                             <img src="https://adaparkizmir.com/images/saha/saha12.jpeg" class="w-100 img-fluid" alt="Adapark Otopark Sahası">
@@ -691,17 +568,13 @@
         <section class="section-padding" id="section_3">
             <div class="container">
                 <h2 class="text-center section-title">Otopark Sahamız</h2>
-                
                 <h4 class="text-muted mb-4 border-start border-primary border-4 ps-3">Açık Otopark Alanları</h4>
                 <div class="row mt-3">
                     <div class="col-lg-4 col-md-6">
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha1.jpeg" alt="Saha 1"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -710,10 +583,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha2.jpeg" alt="Saha 2"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -722,10 +592,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha3.jpeg" alt="Saha 3"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -734,10 +601,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/adapark-otopark-depolama2.jpeg" alt="Adapark Otopark"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -746,10 +610,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha4.jpeg" alt="Saha 4"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -758,10 +619,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/adapark-otopark-depolama.jpeg" alt="Adapark Depolama"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Açık Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Açık Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -774,10 +632,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha6.jpeg" alt="Saha 6"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Kapalı Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Kapalı Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -786,10 +641,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha3.jpeg" alt="Saha 3 Kapalı"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Kapalı Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Kapalı Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -798,10 +650,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/adapark-otopark-depolama3.jpeg" alt="Adapark Kapalı"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Kapalı Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Kapalı Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -810,10 +659,7 @@
                         <div class="thumb-card">
                             <div class="thumb-img-wrapper"><img src="https://adaparkizmir.com/images/saha/saha5.jpeg" alt="Saha 5"></div>
                             <div class="thumb-overlay">
-                                <div>
-                                    <p><strong>Kapasite:</strong> .......</p>
-                                    <p><strong>Tip:</strong> Kapalı Otopark</p>
-                                </div>
+                                <div><p><strong>Kapasite:</strong> .......</p><p><strong>Tip:</strong> Kapalı Otopark</p></div>
                                 <div class="mt-auto"><a href="tel:+905469685222" class="btn btn-light btn-sm w-100 fw-bold">Hemen Ara</a></div>
                             </div>
                         </div>
@@ -826,9 +672,9 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10 text-center">
-                        <h6 class="text-primary text-uppercase tracking-wider fw-bold mb-2">Çalışma Saatlerimiz</h6>
+                        <h6 class="text-primary text-uppercase fw-bold mb-2">Çalışma Saatlerimiz</h6>
                         <h2 class="display-5 fw-bold mb-4">7/24 Açık</h2>
-                        <p class="lead text-muted max-w-2xl mx-auto">
+                        <p class="lead text-muted mx-auto">
                             1.350 Araç kapasiteli otoparkımız 5 ofis olup <strong>7/24 güvenlik</strong> personelimiz ve kameralarla izlenmektedir. Havalimanına 1.2 km uzaklıkta bulunmakta olup ulaşımı kolaydır. Tesisimiz <strong>7/24 açık</strong> olup müşteri hizmetlerimize <strong>08.30 - 18.30</strong> saatleri arasında ulaşıp dilediğiniz bilgiye hızlı bir şekilde ulaşabilirsiniz.
                         </p>
                     </div>
@@ -839,20 +685,18 @@
         <section class="section-padding" id="section_6">
             <div class="container">
                 <h2 class="text-center section-title">Bize Ulaşın</h2>
-                
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-9">
                         <ul class="nav nav-tabs nav-tabs-custom" id="nav-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm" aria-selected="true">İletişim Formu</button>
+                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactForm" type="button" role="tab">İletişim Formu</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactMap" type="button" role="tab" aria-controls="nav-ContactMap" aria-selected="false">Google Maps</button>
+                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab" data-bs-target="#nav-ContactMap" type="button" role="tab">Google Maps</button>
                             </li>
                         </ul>
-
                         <div class="tab-content tab-content-wrapper" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel" aria-labelledby="nav-ContactForm-tab">
+                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel">
                                 <form class="contact-form" action="https://adaparkizmir.com/config.php" method="post" role="form">
                                     <div class="row g-3">
                                         <div class="col-md-6">
@@ -881,13 +725,12 @@
                                     </div>
                                 </form>
                             </div>
-
-                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel" aria-labelledby="nav-ContactMap-tab">
+                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel">
                                 <div class="rounded-4 overflow-hidden shadow-sm">
-                                    <iframe class="google-map" src="https://www.google.com.tr/maps/place/Adapark+Otopark+ve+Ara%C3%A7+Depolama/@38.293275,27.135222,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbe1738eefff23:0x1f26eb8492587dd8!8m2!3d38.293275!4d27.135222!16s%2Fg%2F11n60g7x_g?hl=tr&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com.tr/maps/place/Adapark+Otopark+ve+Ara%C3%A7+Depolama/@38.293275,27.135222,17z/data=!3m1!4b1!4m6!3m5!1s0x14bbe1738eefff23:0x1f26eb8492587dd8!8m2!3d38.293275!4d27.135222!16s%2Fg%2F11n60g7x_g?hl=tr&entry=ttu" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                                <div class="text-center mt-4"> 
-                                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8?sa=X&ved=1t:8290&ictx=111" class="btn btn-nav-cta text-white px-4">Yol Tarifi</a> 
+                                <div class="text-center mt-4">
+                                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8" class="btn btn-nav-cta text-white px-4">Yol Tarifi</a>
                                 </div>
                             </div>
                         </div>
@@ -904,7 +747,6 @@
                     <h5 class="fw-bold border-bottom border-primary border-2 pb-2 d-inline-block">ADAPARK</h5>
                     <p class="text-muted mt-3 pe-3">İzmir Adnan Menderes Havalimanı bölgesinde güvenli araç otopark ve geniş hacimli kurumsal araç depolama çözümleri.</p>
                 </div>
-
                 <div class="col-lg-2 col-md-6">
                     <h5 class="fw-bold pb-2">Hızlı Menü</h5>
                     <ul class="site-footer-links">
@@ -915,7 +757,6 @@
                         <li><a href="https://adaparkizmir.com/index.php#section_6" class="site-footer-link">İletişim</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-3 col-md-6">
                     <h5 class="fw-bold pb-2">Bir sorunuz mu var?</h5>
                     <p class="mb-2">
@@ -925,25 +766,23 @@
                     </p>
                     <p>
                         <a href="mailto:adaparkizmir@gmail.com" class="site-footer-link">
-                            <i class="bi bi-envelope text-primary me-2"></i>adaparkizmir@gmail.com 
+                            <i class="bi bi-envelope text-primary me-2"></i>adaparkizmir@gmail.com
                         </a>
                     </p>
                 </div>
-
                 <div class="col-lg-3 col-md-6">
                     <h5 class="fw-bold pb-2">Adres:</h5>
-                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8?sa=X&ved=1t:8290&ictx=111" class="text-decoration-none">
+                    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8" class="text-decoration-none">
                         <p class="text-muted mb-3"><i class="bi bi-geo-alt text-primary me-2"></i>Ata Cd. No:8, 35473 Menderes/İzmir</p>
                     </a>
-                    <a class="btn btn-outline-dark btn-sm rounded-pill px-3" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8?sa=X&ved=1t:8290&ictx=111">
+                    <a class="btn btn-outline-dark btn-sm rounded-pill px-3" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x14bbe1738eefff23:0x1f26eb8492587dd8">
                         Yol Tarifi Al <i class="bi bi-arrow-up-right ms-1"></i>
                     </a>
                 </div>
             </div>
-
             <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 align-items-center text-center text-md-start">
                 <div class="col-md-6">
-                    <p class="mb-0 small text-muted">Tüm Hakları Saklıdır © 2025 ADAPARK</p>
+                    <p class="mb-0 small text-muted">Tüm Hakları Saklıdır &copy; 2025 ADAPARK</p>
                 </div>
                 <div class="col-md-6 text-md-end mt-2 mt-md-0">
                     <p class="mb-0 small text-muted">Created By: <a href="https://mayadadijital.com/" class="site-footer-link fw-bold">MAYADA Dijital</a></p>
